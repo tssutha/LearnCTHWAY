@@ -1,10 +1,11 @@
-CFLAGS=-Wall -g
+CFLAGS=-Wall -g -DNDENUG
 
-all : ex19
+all : ex22_main
 
-ex19: object.o
+ex22_main: ex22.o
 
 clean:
 	rm -f ex1 *.o *.exe
+	rm -rf *.dSYM
 
 	
