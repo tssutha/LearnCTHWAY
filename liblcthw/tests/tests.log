@@ -1,0 +1,216 @@
+DEBUG tests/bstr_tests.c:36: ----- RUNNING: ./tests/bstr_tests
+DEBUG tests/bstree_tests.c:166: ----- RUNNING: ./tests/bstree_tests
+DEBUG tests/bstree_tests.c:155: 
+----- test_create
+DEBUG tests/bstree_tests.c:156: 
+----- test_get_set
+DEBUG tests/bstree_tests.c:157: 
+----- test_traverse
+DEBUG tests/bstree_tests.c:19: KEY : test data3
+DEBUG tests/bstree_tests.c:19: KEY : test data2
+DEBUG tests/bstree_tests.c:19: KEY : test data1
+DEBUG tests/bstree_tests.c:26: KEY : test data3
+DEBUG tests/bstree_tests.c:26: KEY : test data2
+DEBUG tests/bstree_tests.c:158: 
+----- test_delete
+DEBUG tests/bstree_tests.c:159: 
+----- test_destroy
+DEBUG tests/darray_algos_tests.c:76: ----- RUNNING: ./tests/darray_algos_tests
+DEBUG tests/darray_tests.c:124: ----- RUNNING: ./tests/darray_tests
+DEBUG tests/hashmap_algos_tests.c:163: ----- RUNNING: ./tests/hashmap_algos_tests
+DEBUG tests/hashmap_algos_tests.c:157: 
+----- test_fnv1a
+DEBUG tests/hashmap_algos_tests.c:158: 
+----- test_adler32
+DEBUG tests/hashmap_algos_tests.c:159: 
+----- test_djb
+DEBUG tests/hashmap_algos_tests.c:160: 
+----- test_distribution
+FNV	A32	DJB	JKIN
+1054	1041	1010	978
+965	1029	1026	998
+984	1036	1049	981
+992	985	957	1031
+978	955	1004	980
+1016	965	1012	1050
+974	948	1004	1009
+1011	1079	1015	1050
+972	1069	1013	995
+1000	974	972	1012
+1041	987	1033	1021
+968	1049	1004	963
+998	986	974	1005
+1033	957	1020	977
+999	995	1038	950
+1002	984	995	992
+1080	1011	1006	1044
+1007	977	961	953
+989	1080	1030	1040
+958	1051	1035	1020
+978	1018	1014	1018
+1035	1002	951	1011
+965	993	1054	1044
+1000	1018	1044	975
+1009	981	997	1018
+997	1019	1002	1015
+950	1031	989	1014
+1003	958	987	957
+948	1013	1024	1030
+1030	991	955	1010
+1055	1018	1056	995
+1035	1058	1076	1010
+994	987	1034	1007
+999	1012	943	966
+1026	974	921	929
+1011	986	959	1042
+978	984	1028	956
+972	970	989	1008
+1011	1056	935	948
+1005	1006	1010	1025
+1057	963	1004	977
+981	1031	1003	1014
+1031	1044	991	987
+1009	982	990	932
+998	1008	995	1020
+968	999	1063	925
+1048	1001	1006	1006
+976	1030	968	1077
+1013	1030	1027	1060
+993	969	996	943
+1009	1003	999	992
+973	1007	997	955
+1012	965	981	1010
+1024	971	948	949
+1031	987	991	970
+941	947	1017	1037
+1004	1019	1025	977
+1018	965	985	1030
+1006	929	991	1051
+975	1004	1004	970
+988	990	1014	975
+1007	955	1059	985
+967	1075	978	1000
+1037	966	1021	980
+1018	1064	972	1057
+1021	984	954	979
+1040	951	1048	999
+1009	1056	992	971
+965	1026	968	986
+982	997	979	1014
+1050	1008	969	1048
+951	1031	987	985
+982	1003	944	1039
+940	969	918	1044
+966	923	1018	1023
+1054	962	1007	957
+969	1048	1006	998
+901	1051	969	959
+983	988	1015	993
+1067	1006	1052	1026
+945	960	1009	991
+993	1002	1019	1027
+1005	1015	1007	1041
+1005	1062	1061	1009
+984	990	995	1015
+974	975	939	995
+1033	1010	956	972
+1005	978	976	986
+1056	983	995	1004
+976	941	998	1038
+1002	993	938	1053
+1041	1025	1010	1008
+1079	1003	1029	1017
+1022	996	1060	972
+978	988	1049	957
+990	1016	986	1015
+939	998	1027	1004
+957	987	967	980
+980	993	961	1014
+1050	945	1041	975
+DEBUG tests/hashmap_tests.c:121: ----- RUNNING: ./tests/hashmap_tests
+DEBUG tests/hashmap_tests.c:111: 
+----- test_create
+DEBUG tests/hashmap_tests.c:112: 
+----- test_get_set
+DEBUG src/lcthw/hashmap.c:136: TRY : 0
+DEBUG src/lcthw/hashmap.c:136: TRY : 0
+DEBUG src/lcthw/hashmap.c:136: TRY : 0
+DEBUG tests/hashmap_tests.c:113: 
+----- test_traverse
+DEBUG tests/hashmap_tests.c:19: KEY : test data 3
+DEBUG tests/hashmap_tests.c:19: KEY : test data 1
+DEBUG tests/hashmap_tests.c:19: KEY : test data 2
+DEBUG tests/hashmap_tests.c:27: KEY : test data 3
+DEBUG tests/hashmap_tests.c:27: KEY : test data 1
+DEBUG tests/hashmap_tests.c:114: 
+----- test_delete
+DEBUG src/lcthw/hashmap.c:136: TRY : 0
+DEBUG src/lcthw/hashmap.c:136: TRY : 0
+DEBUG src/lcthw/hashmap.c:136: TRY : 0
+DEBUG tests/hashmap_tests.c:115: 
+----- test_destroy
+DEBUG tests/list_algos_tests.c:101: ----- RUNNING: ./tests/list_algos_tests
+DEBUG tests/list_tests.c:106: ----- RUNNING: ./tests/list_tests
+DEBUG tests/queue_tests.c:66: ----- RUNNING: ./tests/queue_tests
+DEBUG tests/queue_tests.c:58: 
+----- test_create
+DEBUG tests/queue_tests.c:59: 
+----- test_send_recv
+DEBUG tests/queue_tests.c:34: VAL: test 1 data
+DEBUG tests/queue_tests.c:34: VAL: test 2 data
+DEBUG tests/queue_tests.c:34: VAL: test 3 data
+DEBUG tests/queue_tests.c:37: +++++++++++++++++++
+DEBUG tests/queue_tests.c:40: RVAL: test 3 data
+DEBUG tests/queue_tests.c:40: RVAL: test 2 data
+DEBUG tests/queue_tests.c:40: RVAL: test 1 data
+DEBUG tests/queue_tests.c:60: 
+----- test_destroy
+DEBUG tests/ringbuffer_tests.c:81: ----- RUNNING: ./tests/ringbuffer_tests
+DEBUG tests/ringbuffer_tests.c:70: 
+----- test_create
+DEBUG tests/ringbuffer_tests.c:71: 
+----- test_write_read
+[INFO] (src/lcthw/ringbuffer.c:49) data length : 2
+[INFO] (src/lcthw/ringbuffer.c:49) data length : 2
+[INFO] (src/lcthw/ringbuffer.c:49) data length : 2
+[ERROR] (src/lcthw/ringbuffer.c:56: RingBuffer_write:  errno : None) Not enough space: 2 request, 4 available
+ab3
+:DEBUG tests/ringbuffer_tests.c:76: 
+----- test_destroy
+DEBUG tests/stack_tests.c:73: ----- RUNNING: ./tests/stack_tests
+DEBUG tests/stack_tests.c:66: 
+----- test_create
+DEBUG tests/stack_tests.c:67: 
+----- test_push_pop
+DEBUG tests/stack_tests.c:42: VAL : test1 data
+DEBUG tests/stack_tests.c:42: VAL : test2 data
+DEBUG tests/stack_tests.c:42: VAL : test3 data
+DEBUG tests/stack_tests.c:45: +++++++++++++++++++++++
+DEBUG tests/stack_tests.c:48: VAL : test3 data
+DEBUG tests/stack_tests.c:48: VAL : test2 data
+DEBUG tests/stack_tests.c:48: VAL : test1 data
+DEBUG tests/stack_tests.c:68: 
+----- test_destroy
+DEBUG tests/stats_tests.c:76: ----- RUNNING: ./tests/stats_tests
+DEBUG tests/stats_tests.c:70: 
+----- test_operations
+Sum : 55.846019, Sumsq : 425.164097,  n: 10,  min : 0.333348, max : 9.678320 , mean = 5.584602 stddev = 3.547868
+DEBUG tests/stats_tests.c:71: 
+----- test_recreate
+Sum : 55.846020, Sumsq : 425.164100,  n: 10,  min : 0.333000, max : 9.678000 , mean = 5.584602 stddev = 3.547868
+DEBUG tests/tstree_tests.c:113: ----- RUNNING: ./tests/tstree_tests
+DEBUG tests/tstree_tests.c:103: 
+----- test_insert
+DEBUG tests/tstree_tests.c:104: 
+----- test_search_exact
+DEBUG tests/tstree_tests.c:105: 
+----- test_search_prefix
+DEBUG tests/tstree_tests.c:55: result : VALUEA, expected: VALUEA
+DEBUG tests/tstree_tests.c:59: result: VALUE4 expected : VALUE4
+DEBUG tests/tstree_tests.c:63: result: VALUEA ----expected : VALUEA
+DEBUG tests/tstree_tests.c:67: result: VALUE4 ----expected : VALUEA
+DEBUG tests/tstree_tests.c:106: 
+----- test_traverse
+DEBUG tests/tstree_tests.c:85: traverse count is : 4
+DEBUG tests/tstree_tests.c:107: 
+----- test_destroy

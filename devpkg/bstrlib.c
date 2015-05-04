@@ -1,8 +1,8 @@
 /*
  * This source file is part of the bstring string library.  This code was
- * written by Paul Hsieh in 2002-2008, and is covered by the BSD open source 
- * license and the GPL. Refer to the accompanying documentation for details 
- * on usage and license.
+ * written by Paul Hsieh in 2002-2010, and is covered by either the 3-clause 
+ * BSD open source license or GPL v2.0. Refer to the accompanying documentation 
+ * for details on usage and license.
  */
 
 /*
@@ -12,6 +12,7 @@
  */
 
 #if defined (_MSC_VER)
+/* These warnings from MSVC++ are totally pointless. */
 # define _CRT_SECURE_NO_WARNINGS
 #endif
 
@@ -2755,7 +2756,7 @@ struct genBstrList g;
 #define START_VSNBUFF (256)
 #else
 
-#ifdef __GNUC__
+#if defined(__GNUC__) && !defined(__APPLE__)
 /* Something is making gcc complain about this prototype not being here, so 
    I've just gone ahead and put it in. */
 extern int vsnprintf (char *buf, size_t count, const char *format, va_list arg);
@@ -2926,14 +2927,14 @@ int n, r;
  *  string fmt and attempts to append the result to b.  The fmt parameter is 
  *  the same as that of the printf function.  The variable argument list is 
  *  replaced with arglist, which has been initialized by the va_start macro.
- *  The size of the output is upper bounded by count.  If the required output
- *  exceeds count, the string b is not augmented with any contents and a value
- *  below BSTR_ERR is returned.  If a value below -count is returned then it
- *  is recommended that the negative of this value be used as an update to the
- *  count in a subsequent pass.  On other errors, such as running out of 
- *  memory, parameter errors or numeric wrap around BSTR_ERR is returned.  
- *  BSTR_OK is returned when the output is successfully generated and 
- *  appended to b.
+ *  The size of the appended output is upper bounded by count.  If the 
+ *  required output exceeds count, the string b is not augmented with any 
+ *  contents and a value below BSTR_ERR is returned.  If a value below -count 
+ *  is returned then it is recommended that the negative of this value be 
+ *  used as an update to the count in a subsequent pass.  On other errors, 
+ *  such as running out of memory, parameter errors or numeric wrap around 
+ *  BSTR_ERR is returned.  BSTR_OK is returned when the output is successfully 
+ *  generated and appended to b.
  *
  *  Note: There is no sanity checking of arglist, and this function is
  *  destructive of the contents of b from the b->slen point onward.  If there 
@@ -2952,21 +2953,25 @@ int n, r, l;
 	exvsnprintf (r, (char *) b->data + b->slen, count + 2, fmt, arg);
 
 	/* Did the operation complete successfully within bounds? */
-
-	if (n >= (l = b->slen + (int) (strlen) ((const char *) b->data + b->slen))) {
-		b->slen = l;
-		return BSTR_OK;
+	for (l = b->slen; l <= n; l++) {
+		if ('\0' == b->data[l]) {
+			b->slen = l;
+			return BSTR_OK;
+		}
 	}
 
 	/* Abort, since the buffer was not large enough.  The return value 
 	   tries to help set what the retry length should be. */
 
 	b->data[b->slen] = '\0';
-	if (r > count+1) l = r; else {
-		l = count+count;
-		if (count > l) l = INT_MAX;
+	if (r > count + 1) {	/* Does r specify a particular target length? */
+		n = r;
+	} else {
+		n = count + count;	/* If not, just double the size of count */
+		if (count > n) n = INT_MAX;
 	}
-	n = -l;
+	n = -n;
+
 	if (n > BSTR_ERR-1) n = BSTR_ERR-1;
 	return n;
 }

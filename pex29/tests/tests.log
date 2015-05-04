@@ -1,0 +1,32 @@
+DEBUG tests/libex29_tests.c:62: ----- RUNNING: ./tests/libex29_tests
+DEBUG tests/libex29_tests.c:54: 
+----- test_dlopen
+DEBUG tests/libex29_tests.c:55: 
+----- test_functions
+DEBUG tests/libex29_tests.c:56: 
+----- test_failures
+DEBUG tests/libex29_tests.c:57: 
+----- test_dlclose
+DEBUG tests/libex29_tests.c:62: ----- RUNNING: ./tests/libex29_tests
+DEBUG tests/libex29_tests.c:54: 
+----- test_dlopen
+DEBUG tests/libex29_tests.c:55: 
+----- test_functions
+[ERROR] (tests/libex29_tests.c:15: check_function:  errno : None) Function print_message return 0 for data Hello
+[ERROR] (tests/libex29_tests.c:30: test_functions:  errno : None) Print_message failed
+DEBUG tests/libex29_tests.c:62: ----- RUNNING: ./tests/libex29_tests
+DEBUG tests/libex29_tests.c:54: 
+----- test_dlopen
+DEBUG tests/libex29_tests.c:55: 
+----- test_functions
+DEBUG tests/libex29_tests.c:56: 
+----- test_failures
+DEBUG tests/libex29_tests.c:57: 
+----- test_dlclose
+DEBUG tests/libex29_tests.c:62: ----- RUNNING: ./tests/libex29_tests
+DEBUG tests/libex29_tests.c:54: 
+----- test_dlopen
+DEBUG tests/libex29_tests.c:55: 
+----- test_functions
+[ERROR] (tests/libex29_tests.c:15: check_function:  errno : None) Function print_message return 0 for data Hello
+[ERROR] (tests/libex29_tests.c:30: test_functions:  errno : None) Print_message failed
